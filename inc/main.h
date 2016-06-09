@@ -25,8 +25,7 @@ typedef struct {
 		double Sto_rapi[Sto_rapi_Num];
 }_parameter;
 
-extern void Initial_Para_conc(_parameter *par);
-extern void Initial_Para_rapi(_parameter *par);
+extern void Initial_Para(_parameter *par);
 extern void table_Ini(_parameter *par, char fname[150]);
 extern void table(double *Time, _parameter *par, char fname[150]);
 extern void Stochastic(_parameter *par, double *Time, double *sigma_react,double *exp_rand);

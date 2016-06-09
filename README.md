@@ -17,8 +17,7 @@
       Makefile            Makefile
       main.c              メイン部分
       Graph.c             グラフ描写部分
-      Initial_Para_conc.c 個数の初期値設定
-      Initial_para_rapi.c 確率定数の設定
+      Initial_Para.c 個数の初期値・確率定数の設定
       Stocahtic.c         計算部分
       mt19937ar.c         乱数生成
       table.c             表形式での出力
