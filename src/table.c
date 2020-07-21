@@ -21,22 +21,22 @@ extern void table_Ini(_parameter *par, char fname[150]){
 	}
 	fprintf(output,"\n");
 
- 	fclose(output);
+	fclose(output);
 }
 
 extern void table(double *Time, _parameter *par, char fname[150]){
 
-  FILE   *output;
-  int i;
+	FILE   *output;
+	int i;
 
-  output = fopen(fname, "a");
+	output = fopen(fname, "a");
 
-  fprintf(output,"%E",*Time);
+	fprintf(output,"%E",*Time);
 
-  for(i = 0 ; i < Sto_conc_Num ; i++){
+	for(i = 0 ; i < Sto_conc_Num ; i++){
 		fprintf(output,",%E", par->Sto_conc[i]);
 	}
-  fprintf(output, "\n");
+	fprintf(output, "\n");
 
-  fclose(output);
+	fclose(output);
 }
