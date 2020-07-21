@@ -1,12 +1,12 @@
-# Gillespie_Method
+# gillespie-method
 ## 1. はじめに
 
-    このプログラムは、Gillespie法と呼ばれる手法を用いて確率微分方程式の
-    数値解法を行なうプログラムである。
+    このプログラムはGillespie法と呼ばれる確率微分方程式の
+    数値計算を実施するプログラムである．
 
-    事前導入ソフトを以下に示す。
-      ・Intel Compiler Version 16.0.2 (gcc version 4.9.0 compatibility)
-      ・Gnuplot Version 5.0 patchlevel 1      
+    事前に導入が必要なソフト
+      ・gcc version 4.9.0 ~
+      ・Gnuplot Version 5.0 patchlevel 1 ~
 
     各ファイルの内容は以下の通りである。
 
@@ -17,7 +17,7 @@
       Makefile            Makefile
       main.c              メイン部分
       Graph.c             グラフ描写部分
-      Initial_Para.c 個数の初期値・確率定数の設定
+      Initial_Para.c      個数の初期値・確率定数の設定
       Stocahtic.c         計算部分
       mt19937ar.c         乱数生成
       table.c             表形式での出力
@@ -27,7 +27,7 @@
       mt19937ar.h         乱数用ヘッダファイル
 
     ./bin/
-      Gillespie          実行ファイル
+      gillespie          実行ファイル
 
 ## 2. おわりに
 
